@@ -1,0 +1,62 @@
+/*
+CSS - Cascading StyleSheet
+
+BOX  
+    Largura
+    Altura
+    Conteúdo da caixa
+
+    Espaçamentos
+    Preenchimento
+    Bordas
+    
+    Posicionamentos
+*/
+body {
+    background: #e5e5e5;
+    color: #25282b;
+
+    margin: 0;
+}
+
+#container {
+    width: 80%;
+    max-width: 980px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+
+}
+
+#intro {
+    width: 300px;
+}
+
+button {
+    color: #ff5e84;
+
+    border: none;
+    
+    font-weight: bold;
+    background: none;
+}
+
+button.fat {
+    color: white;
+    background: #ff5e84;
+}
+
+#buttons, footer {
+    text-align: center;
+}
+
+#footer a{
+    color: #25282b;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
