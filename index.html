@@ -1,28 +1,11 @@
 <!DOCTYPE html>
 
-<!--
-                HTML 
-
-    HyperText:
-        Tradução: Hiper Textos
-        São textos que aceitam links
-
-    Markup:
-        Tradução: Marcação
-        São marcações feitas com <tags>
-    
-    Language:
-        Tradução: Linguagem
-        NÃO É LINGUAGEM DE PROGRAMAÇÃO!
-
--->
-
-<htlm><!-- Tag HTML -->
+<htlm>
     <head>
-        <!-- Responsável por receber configurações da página -->
         <meta charset="UTF-8">
         <title>Casa Criativa</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -53,7 +36,7 @@
                 </main>
 
                 <section id="buttons">
-                    <button>+ Adicionar Ideia</button>
+                    <button onclick="onOff()">+ Adicionar Ideia</button>
                     <button class="fat">Ver Ideias</button>
                 </section>
                 
@@ -111,7 +94,44 @@
 
         </div>
 
-        
+        <!-- Modal -->
+        <div id="modal" class="hide">
+            <div class="content">
+                <h1>Nova Ideia</h1>
+
+                <form action="">
+                
+                    <div class="input-wrapper">
+                        <label for="title">Título da ideia</label>
+                        <input type="text" name="title">
+                    </div>
+                
+                    <div class="input-wrapper">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="image">Link da imagem</label>
+                        <input type="url" name="image">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="description">Digite uma descrição para essa ideia</label>
+                        <textarea name="description" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="link">Link da ideia</label>
+                        <input type="url" name="link">
+                    </div>
+                    
+                    <a href="#" onclick="onOff()">Voltar</a>
+                    <button>Salvar</button>
+                
+                </form>
+            </div>
+        </div>
 
         <script src="scripts.js"></script>
 
